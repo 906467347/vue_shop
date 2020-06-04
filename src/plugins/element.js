@@ -1,7 +1,8 @@
 import Vue from 'vue'
-import { Button,Form,FormItem,Input,Message} from 'element-ui'
-Vue.use(Button)
-Vue.use(Form)
-Vue.use(FormItem)
-Vue.use(Input)
+import Element, { MessageBox } from 'element-ui'
+import { Message } from 'element-ui'
+
+Vue.use(Element)
+
 Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm
