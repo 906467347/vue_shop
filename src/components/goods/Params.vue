@@ -23,7 +23,7 @@
             :options="cateList"
             :props="cateProps"
             @change="handleChange"
-            expand-trigger="hover"
+            
           ></el-cascader>
         </el-col>
       </el-row>
@@ -202,7 +202,8 @@ export default {
       cateProps: {
         value: "cat_id",
         label: "cat_name",
-        children: "children"
+        children: "children",
+         expandTrigger: 'hover'
       },
       // 级联选择框双向绑定的数组
       selectedCateKeys: [],
